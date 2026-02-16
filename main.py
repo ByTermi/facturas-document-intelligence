@@ -353,7 +353,7 @@ def guardar_en_base_datos(datos, nombre_fichero):
 
 def main():
     """Procesa todos los PDFs del directorio"""
-    pdf_dir = Path(__file__).parent
+    pdf_dir = Path(__file__).parent / "facturas"
     archivos = sorted(list(pdf_dir.glob("*.pdf")))
     
     print("=" * 80)
